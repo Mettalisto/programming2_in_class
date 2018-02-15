@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+string zad1(float zdr[])
+{
+    float x;
+    bool flag = false;
+    cin>>x;
+    string a;
+    a = "no";
+    for(int i =0; i<4; i++)
+    {
+        if(x==zdr[i])
+        {
+            flag = true;
+            a = "Yes";
+            break;
+        }
+
+    return a;
+
+}
+}
+
+int main()
+{
+    float zdr[4];
+    zdr[0] = 1.5;
+    zdr[1] = 2.5;
+    zdr[2] = 3.5;
+    zdr[3] = 4.5;
+    zdr[4] = 5.5;
+    cout<<zad1(zdr);
+    return 0;
+}

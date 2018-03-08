@@ -1,0 +1,47 @@
+#include <iostream>
+#include <map>
+
+using namespace std;
+void zad1()
+{
+    int sum;
+    sum=0;
+    map<string,int>tr;
+    tr["Bulgaria"]=7000000;
+    tr["Grace"]=8000000;
+    tr["USA"]=150000000;
+    tr["Croatia"]=5000000;
+    tr["Turkey"]=15000000;
+    map<string,int>::iterator it;
+    it=tr.begin();
+    while(it!=tr.end())
+    {
+        cout<<it->first<<"-"<<it->second<<endl;
+        sum = sum + it->second;
+        it++;
+    }
+    cout<<sum<<endl;
+
+}
+void zad2()
+{
+    map<string,string>hi;
+    hi["Skilet"]="Hero";
+    hi["Skillet"]="Not gonna die";
+    hi["Skillett"]="Monster";
+    hi["Daddy Yanke"]="Rompe";
+    hi["Daddy Yankee"]="Gasolina";
+    map<string,string>::iterator it;
+    it=hi.begin();
+    while(it!=hi.end())
+    {
+        cout<<it->first<<"-"<<it->second<<endl;
+        it++;
+    }
+}
+int main()
+{
+    zad1();
+    zad2();
+    return 0;
+}
